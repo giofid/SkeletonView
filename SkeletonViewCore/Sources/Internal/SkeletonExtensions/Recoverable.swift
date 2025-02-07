@@ -183,6 +183,7 @@ extension UIButton {
             let state = buttonState.state
 
             if let attributedTitle = buttonState.attributedTitle, self.attributedTitle(for: state) == nil || forced {
+                self.titleLabel?.attributedText = attributedTitle
                 self.setAttributedTitle(attributedTitle, for: state)
             } else if let title = buttonState.title, self.title(for: state) == nil || forced {
                 self.setTitle(title, for: state)
