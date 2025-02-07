@@ -22,7 +22,7 @@ extension UIView {
         
         startTransition { [weak self] in
             self?.backgroundColor = .clear
-            self?.layer.borderColor = nil
+            self?.layer.borderColor = UIColor.clear.cgColor
         }
     }
     
