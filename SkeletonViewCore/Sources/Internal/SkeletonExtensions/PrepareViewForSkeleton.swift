@@ -104,7 +104,7 @@ extension UIButton {
         startTransition { [weak self] in
             guard let self = self else { return }
 
-            self.setTitle(nil, for: self.state)
+//            self.setTitle(nil, for: self.state)
             self.setTitleColor(nil, for: self.state)
             self.setAttributedTitle(nil, for: self.state)
             self.setImage(nil, for: self.state)
