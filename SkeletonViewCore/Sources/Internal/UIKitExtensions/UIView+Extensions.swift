@@ -40,16 +40,16 @@ extension UIView {
     /// Math
     
     var definedMaxBounds: CGRect {
-        if let parentStackView = (superview as? UIStackView) {
-            var origin: CGPoint = .zero
-            switch parentStackView.alignment {
-            case .trailing:
-                origin.x = definedMaxWidth
-            default:
-                break
-            }
-            return CGRect(origin: origin, size: definedMaxSize)
-        }
+//        if let parentStackView = (superview as? UIStackView) {
+//            var origin: CGPoint = .zero
+//            switch parentStackView.alignment {
+//            case .trailing:
+//                origin.x = definedMaxWidth
+//            default:
+//                break
+//            }
+//            return CGRect(origin: origin, size: definedMaxSize)
+//        }
         return CGRect(origin: .zero, size: definedMaxSize)
     }
     
