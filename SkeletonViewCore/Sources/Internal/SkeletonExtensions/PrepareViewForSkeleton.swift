@@ -71,6 +71,7 @@ extension UITextField {
         startTransition { [weak self] in
             self?.textColor = .clear
             self?.placeholder = nil
+            self?.layer.borderColor = UIColor.clear.cgColor
         }
     }
     
