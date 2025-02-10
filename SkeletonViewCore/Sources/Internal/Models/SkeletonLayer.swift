@@ -41,6 +41,9 @@ struct SkeletonLayer {
         if let bounds = holder?.definedMaxBounds {
             maskLayer.bounds = bounds
         }
+        if let holder = holder {
+            maskLayer.cornerRadius = CGFloat(holder.skeletonCornerRadius)
+        }
         updateLinesIfNeeded()
     }
     
