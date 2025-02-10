@@ -21,8 +21,8 @@ extension UIView {
     ) {
         _isSkeletonAnimated = config.animated
         
+        _flowDelegate = SkeletonFlowHandler()
         if notifyDelegate {
-            _flowDelegate = SkeletonFlowHandler()
             _flowDelegate?.willBeginShowingSkeletons(rootView: self)
         }
         
