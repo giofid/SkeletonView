@@ -86,9 +86,9 @@ extension UIImageView {
             isUserInteractionEnabled = false
         }
         
-        startTransition { [weak self] in
-            self?.image = nil
-        }
+//        startTransition { [weak self] in
+//            self?.image = nil
+//        }
     }
     
 }
